@@ -47,84 +47,100 @@
     </header>
 
     <main>
+        <section class="container info-section">
         <!-- Slider de Imagenes -->
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="3000">
-                <img src="./assets/images/slider1.jpg" class="d-block w-100" alt="...">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./assets/images/slider1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./assets/images/slider2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./assets/images/slider3.jpg" class="d-block w-100" alt="...">
+                    </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                <img src="./assets/images/slider2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                <img src="./assets/images/slider3.jpg" class="d-block w-100" alt="...">
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
 
-        <!-- Tarjetas de Servicios -->
-        <section class="servicios-container container">
-            <article class="row g-2">
-                <div class="col-12 col-md-6 col-xxl-3 card">
-                    <div class="tarjeta-servicio card-body">
-                        <h6 class="card-title">Servicios de Detección de Gas y Fuego</h6>
-                        <p class="card-text">Solución diseñada para protección de las instalaciones</p>
+            <!-- Tarjetas de Servicios -->
+            <section class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2">
+                    <div class="col">
+                        <div class="card tarjeta-servicio">
+                            <div class="card-body">
+                                <h6 class="card-title">Servicios de Detección de Gas y Fuego</h6>
+                                <p class="card-text">Solución diseñada para protección de las instalaciones.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card tarjeta-servicio">
+                            <div class="card-body">
+                                <h6 class="card-title">Sistemas de Alerta, Sirenas y Voceo</h6>
+                                <p class="card-text">Sistemas diseñados para alertar de sucesos o contingencias</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card tarjeta-servicio">
+                            <div class="card-body">
+                                <h6 class="card-title">Sistemas de Intercomunicación y Voceo</h6>
+                                <p class="card-text">Sistemas diseñados para comunicación y alertamiento.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card tarjeta-servicio">
+                            <div class="card-body">
+                                <h6 class="card-title">Sistemas de Circuito Cerrado de TV</h6>
+                                <p class="card-text">Soluciones diseñadas para monitoreo y video vigilancia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card tarjeta-servicio">
+                            <div class="card-body">
+                                <h6 class="card-title">Sistemas de Detección de Humo y Supresión de Incendios</h6>
+                                <p class="card-text">Solución diseñada para detección y mitigación de incendios.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card tarjeta-servicio">
+                            <div class="card-body">
+                                <h6 class="card-title">Sistemas de Control y Medición</h6>
+                                <p class="card-text">Sistemas diseñados para el control y medición de variables.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card tarjeta-servicio">
+                            <div class="card-body">
+                                <h6 class="card-title">Sistemas de Tierra, Protección contra Cargas Atmosfericas</h6>
+                                <p class="card-text">Solución diseñada para la protección de las instalaciones y del capital hummano contra las cargas atmosfericas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card tarjeta-servicio">
+                            <div class="card-body">
+                                <h6 class="card-title">Soluciones IA</h6>
+                                <p class="card-text">Contamos con personal capacitado para brindarle solución a sus necesidades mediante softwares de IA.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xxl-3 card">
-                    <div class="tarjeta-servicio card-body">
-                        <h6 class="card-title"> Sistemas de Alerta, Sirenas y Voceo</h6>
-                        <p class="card-text">Sistemas diseñados para alertar de sucesos o contingencias.</p>
-                    </div>
-                    
-                </div>
-                <div class="col-12 col-md-6 col-xxl-3 card">
-                    <div class="tarjeta-servicio card-body">
-                        <h6 class="card-title">Sistemas de Intercomunicación y Voceo</h6>
-                        <p class="card-text">Sistemas diseñados para comunicación y alertamiento.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-xxl-3 card">
-                    <div class="tarjeta-servicio card-body">
-                        <h6 class="card-title">Sistemas de Circuito Cerrado de TV</h6>
-                        <p class="card-text">Soluciones diseñadas para monitoreo y video vigilancia</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-xxl-3 card">
-                    <div class="tarjeta-servicio card-body">
-                        <h6 class="card-title">Sistemas de Detección de Humo y Supresión de Incendios</h6>
-                        <p class="card-text">Solución diseñada para detección y mitigación de incendios</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-xxl-3 card">
-                    <div class="tarjeta-servicio card-body">
-                        <h6 class="card-title">Sistemas de Control y Medición</h6>
-                        <p class="card-text">Sistemas diseñados para el control y medición de variables</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-xxl-3 card">
-                    <div class="tarjeta-servicio card-body">
-                        <h6 class="card-title">Sistemas de Tierra, Protección contra Cargas Atmosfericas</h6>
-                        <p class="card-text">Solución diseñada para la protección de las instalaciones y del capital hummano contra las cargas atmosfericas.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-xxl-3 card">
-                    <div class="tarjeta-servicio card-body">
-                        <h6 class="card-title">Soluciones IA</h6>
-                        <p class="card-text">Contamos con personal capacitado para brindarle solución a sus necesidades mediante softwares de IA.</p>
-                    </div>
-                </div>
-            </article>  
+            </section>
         </section>
-        
     </main>
     
 

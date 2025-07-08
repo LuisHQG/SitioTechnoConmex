@@ -68,7 +68,6 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-  max-width: 2000px;
   z-index: -1; /* Para que quede detrás del navbar y del contenido */
   overflow: hidden;
 }

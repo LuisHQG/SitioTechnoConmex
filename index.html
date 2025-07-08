@@ -52,7 +52,7 @@
 
     <main>
         <!-- Slider de Imagenes -->
-        <section class="container-fluid p-0">
+        <section class="slider-container">
             <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="3000">
@@ -77,9 +77,9 @@
         </section>
 
         <!-- Tarjetas de Servicios -->
-        <section class="container-fluid mb-5 mt-4">
+        <section class="container-fluid mb-5 mt-4 tarjetas-servicios">
             <h1 class="mb-3">Nuestros Servicios</h1>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5 g-2">
+            <div class="row row-cols-1 row-cols-sm-2  row-cols-xl-5 g-2">
                 <div class="col">
                     <div class="card tarjeta-servicio h-100">
                         <div class="card-body">
@@ -160,8 +160,16 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
+
+        <section class="prueba container mt-5">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas incidunt iure sed aut facilis porro hic cumque fugit repudiandae eos natus quibusdam nesciunt ipsum dicta id assumenda repellat, dolorem necessitatibus?
+            Exercitationem saepe sint, quaerat ex, ab nobis alias optio doloribus expedita unde quidem blanditiis cum, sequi esse! Recusandae ullam est, placeat ut atque dolore fugiat laudantium delectus minima iste illo!
+            Dolores quod temporibus nostrum tempore minus, asperiores impedit iure accusantium quae nam provident voluptas earum itaque necessitatibus, natus, a ex sunt cum dicta? Eius ipsam amet similique facilis, alias est.
+            Dolore, eius ipsum ipsa velit autem eum eos, repellat laboriosam dolorem voluptatibus nostrum placeat dicta tenetur quisquam id, ea nam officia esse aperiam aspernatur quam. Recusandae dolorem velit odit aut.
+            Eaque, numquam aperiam. Recusandae accusamus facilis ipsa dolor blanditiis. Dolorem ipsam provident quia eaque perspiciatis consequuntur perferendis iure sequi maiores, tenetur explicabo? Omnis facilis doloribus quis fugit illo consequuntur minus.</p>
+        </section>
+        
     </main>
 
     <footer>
@@ -171,5 +179,35 @@
 
     <!-- Bootstraps JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+     <!-- JS para ajustar altura -->
+    <script>
+        function ajustarAlturaSlider() {
+            const tarjetas = document.querySelector('.tarjetas-servicios');
+            const slider = document.querySelector('.slider-container');
+
+            if (tarjetas && slider) {
+                const alturaContenido = tarjetas.getBoundingClientRect().height;
+                const estilos = getComputedStyle(tarjetas);
+                const margenTop = parseFloat(estilos.marginTop) || 0;
+                const margenBottom = parseFloat(estilos.marginBottom) || 0;
+
+                // 🔸 Obtener 1rem en píxeles desde el root
+                const remEnPixeles = parseFloat(getComputedStyle(document.documentElement).fontSize);
+
+                // 🔸 Define cuántos rem extra quieres
+                const extraEnRem = 3; // por ejemplo: 3rem
+                const extraEnPixeles = remEnPixeles * extraEnRem;
+
+                const alturaTotal = alturaContenido + margenTop + margenBottom + extraEnPixeles;
+
+                slider.style.height = `${alturaTotal}px`;
+            }
+        }
+
+        window.addEventListener('load', ajustarAlturaSlider);
+        window.addEventListener('resize', ajustarAlturaSlider);
+    </script>
+
 </body>
 </html>

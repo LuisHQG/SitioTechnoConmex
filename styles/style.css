@@ -25,7 +25,6 @@ header{
     display: flex;
     justify-content: center;
     max-width: 100vw;
-    height: auto;
     margin: 1rem 0;
 }
 
@@ -34,7 +33,7 @@ header{
     background-color: #0a1128;
     padding: 0.5rem 1rem;
     position: relative;
-    z-index: 100;
+    max-width: 1200px;
 }
 
 .logo-navbar{
@@ -58,7 +57,7 @@ header{
 }
 
 .container-fluid{
-    max-width: 100vw;
+    max-width: 2000px;
 }
 
 /* Página inicio */
@@ -128,7 +127,6 @@ footer{
         margin: 1rem 0.7rem;
         padding: 0.5rem 1rem;
         border-radius: 10px;
-        max-width: 1200px;
     }
 
     .info-section{

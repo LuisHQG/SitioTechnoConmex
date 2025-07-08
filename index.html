@@ -179,5 +179,35 @@
 
     <!-- Bootstraps JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+     <!-- JS para ajustar altura -->
+    <script>
+        function ajustarAlturaSlider() {
+            const tarjetas = document.querySelector('.tarjetas-servicios');
+            const slider = document.querySelector('.slider-container');
+
+            if (tarjetas && slider) {
+                const alturaContenido = tarjetas.getBoundingClientRect().height;
+                const estilos = getComputedStyle(tarjetas);
+                const margenTop = parseFloat(estilos.marginTop) || 0;
+                const margenBottom = parseFloat(estilos.marginBottom) || 0;
+
+                // 🔸 Obtener 1rem en píxeles desde el root
+                const remEnPixeles = parseFloat(getComputedStyle(document.documentElement).fontSize);
+
+                // 🔸 Define cuántos rem extra quieres
+                const extraEnRem = 3; // por ejemplo: 3rem
+                const extraEnPixeles = remEnPixeles * extraEnRem;
+
+                const alturaTotal = alturaContenido + margenTop + margenBottom + extraEnPixeles;
+
+                slider.style.height = `${alturaTotal}px`;
+            }
+        }
+
+        window.addEventListener('load', ajustarAlturaSlider);
+        window.addEventListener('resize', ajustarAlturaSlider);
+    </script>
+
 </body>
 </html>

@@ -63,20 +63,33 @@ header{
     color: white;
 }
 
-.slider-container{
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    margin-bottom: 1rem;
+.slider-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 2000px;
+  z-index: -1; /* Para que quede detrás del navbar y del contenido */
+  overflow: hidden;
 }
 
-/* Página inicio */
+/* Asegura que el carrusel ocupe toda la altura del slider-container */
 
-.d-block{
-    height: 100vh !important;
-    object-fit: cover;
+/* 2. Permite que el slider y sus hijos se expandan a la altura que les asignes con JS */
+.slider-container,
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100%;
 }
 
+/* 3. Ajuste visual de las imágenes del slider */
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 .tarjetas-servicios{
     display: flex;
     flex-direction: column;

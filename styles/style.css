@@ -12,25 +12,48 @@ body{
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
-    width: 100%;
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
-    height: 150vh;
+    /* background-color: #f4ebd9; */
 }
 
 .text-justify{
     text-align: justify;
 }
 
+header{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+}
+
 .navbar{
-    border-color: black;
-    border: 2px solid;
+    width: 100%;
+    background-color: #0a1128;
+    padding: 0.5rem 1rem;
 }
 
 .logo-navbar{
-    width: 15rem;
+    width: 11rem;
 }   
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: white;
+}
+
+.offcanvas.offcanvas-end {
+    width: 50vw;
+}
+
+.offcanvas{
+    background-color: rgba(10,17,40,0.9);
+}
+
+.offcanvas-title{
+    color: white;
+}
 
 /* Página inicio */
 .carousel{
@@ -38,11 +61,15 @@ body{
 }
 
 .d-block{
-    border-radius: 1rem;
+    width: 100%;
+    max-height: 50vh;
+    object-fit: cover;
+    object-position:50% 50% ; /* Ajusta la posición de la imagen */
 }
 
 .tarjeta-servicio{
-    border-radius: 5px;
+    border-radius: 3px;
+    border-color: #0C0F0A
 }
 
 .tarjeta-servicio h6{
@@ -64,6 +91,13 @@ body{
     font-size: 1rem;
 }
 
+h1{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    color: #0a1128;
+}
+
 
 footer{
     background-color: blueviolet;
@@ -79,6 +113,15 @@ footer{
     .logo-navbar{
         width: 9rem;
         margin-left: 1rem;
+    }
+
+    .navbar{
+        width: 80%;
+        background-color: #0a1128;
+        margin: 1rem 0.7rem;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        max-width: 1200px;
     }
 
     .info-section{

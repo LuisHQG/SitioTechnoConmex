@@ -17,24 +17,29 @@ body{
     min-height: 100vh; 
 }
 
-.text-justify{
-    text-align: justify;
-}
-
 header{
     display: flex;
     justify-content: center;
     max-width: 100vw;
     height: auto;
-    margin: 1rem 0;
 }
+
+.text-justify{
+    text-align: justify;
+}
+
+.container-fluid{
+   max-width: 2000px;
+}
+
+/* ------------------------------------------------- NAVBAR --------------------------------------------------- */
 
 .navbar{
     width: 100%;
     background-color: #0a1128;
     padding: 0.5rem 1rem;
-    position: relative;
-    z-index: 100;
+    max-width: 1200px;
+    z-index: 1;
 }
 
 .logo-navbar{
@@ -50,33 +55,46 @@ header{
 }
 
 .offcanvas{
-    background-color: rgba(10,17,40,0.9);
+    background-color: rgba(10,17,40,0.5);
+    backdrop-filter: blur(5px);
 }
 
 .offcanvas-title{
     color: white;
 }
 
-.container-fluid{
-    max-width: 100vw;
+.slider-container{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    margin-bottom: 1rem;
 }
 
 /* Página inicio */
-.carousel{
-    margin: 1.5rem auto;
-}
 
 .d-block{
-    width: 100%;
-    max-height: 50vh;
+    height: 100vh !important;
     object-fit: cover;
-    object-position:50% 50% ; /* Ajusta la posición de la imagen */
+}
+
+.tarjetas-servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetas-servicios h1{
+    width: 20rem;
+    background-color: rgba(158,163,176,0.7);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
 }
 
 .tarjeta-servicio{
     border-radius: 2px;
-    background-color: #0a1128;
-    color: #FDFFFF;
+    background-color: rgba(158,163,176,0.7);
+    color: #0a1128;
+    backdrop-filter: blur(5px);
 }
 
 .tarjeta-servicio h6{
@@ -89,6 +107,7 @@ header{
     font-size: 0.7rem;
     text-align: justify;
 }
+
 
 /* Página nosotros */
 .lema{
@@ -124,11 +143,10 @@ footer{
     }
 
     .navbar{
-        width: 80%;
+        width: 85%;
         margin: 1rem 0.7rem;
         padding: 0.5rem 1rem;
         border-radius: 10px;
-        max-width: 1200px;
     }
 
     .info-section{

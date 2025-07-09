@@ -63,6 +63,7 @@ header{
     color: white;
 }
 
+/*------------------------------------------------- SLIDER ---------------------------------------------------*/
 .slider-container {
   position: absolute;
   top: 0;
@@ -71,10 +72,7 @@ header{
   z-index: -1; /* Para que quede detrás del navbar y del contenido */
   overflow: hidden;
 }
-
-/* Asegura que el carrusel ocupe toda la altura del slider-container */
-
-/* 2. Permite que el slider y sus hijos se expandan a la altura que les asignes con JS */
+/*--- Asegura que el carrusel ocupe toda la altura del slider-container ---*/
 .slider-container,
 .carousel,
 .carousel-inner,
@@ -82,13 +80,15 @@ header{
   height: 100%;
 }
 
-/* 3. Ajuste visual de las imágenes del slider */
+/*--- Ajuste visual de las imágenes del slider ---*/
 .carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
+
+
 .tarjetas-servicios{
     display: flex;
     flex-direction: column;
@@ -134,6 +134,18 @@ h1{
     text-align: center;
     font-weight: 600;
     color: #0a1128;
+}
+
+/*------------------------------------------------- Página Líneas ---------------------------------------------------*/
+
+.servicio h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.experiencia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 

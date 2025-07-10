@@ -69,6 +69,8 @@ header{
   top: 0;
   left: 0;
   width: 100%;
+  min-height: 100vh;
+  height: auto;
   z-index: -1; /* Para que quede detrás del navbar y del contenido */
   overflow: hidden;
 }
@@ -88,6 +90,14 @@ header{
   object-position: center;
 }
 
+.pagina-principal{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
 
 .tarjetas-servicios{
     display: flex;

@@ -52,7 +52,7 @@
         <!-- End Navbar -->
     </header>
 
-    <main>
+    <main class="pagina-principal p-0">
         <!-- Slider de Imagenes -->
         <section class="slider-container">
             <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -79,7 +79,7 @@
         </section>
 
         <!-- Tarjetas de Servicios -->
-        <section class="container-fluid mb-5 mt-4 tarjetas-servicios">
+        <section class="container-fluid mb-2 mt-4 tarjetas-servicios">
             <h1 class="mb-3">Nuestros Servicios</h1>
             <div class="row row-cols-1 row-cols-sm-2  row-cols-xl-4 g-2">
                 <div class="col">
@@ -178,16 +178,23 @@
                         </div>
                     </div>
                 </div>
+                <div class="col">
+                    <div class="card tarjeta-servicio h-100">
+                        <div class="card-body">
+                            <h6 class="card-title">Obra Civil</h6>
+                            <p class="card-text">Contamos con personal capacitado para brindarle solución a sus necesidades mediante softwares de IA.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card tarjeta-servicio h-100">
+                        <div class="card-body">
+                            <h6 class="card-title">Servicio de Reclutamiento y Selección de Personal</h6>
+                            <p class="card-text">Contamos con personal capacitado para brindarle solución a sus necesidades mediante softwares de IA.</p>
+                        </div>
+                    </div>
+                </div>
         </section>
-
-        <section class="prueba container mt-5">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas incidunt iure sed aut facilis porro hic cumque fugit repudiandae eos natus quibusdam nesciunt ipsum dicta id assumenda repellat, dolorem necessitatibus?
-            Exercitationem saepe sint, quaerat ex, ab nobis alias optio doloribus expedita unde quidem blanditiis cum, sequi esse! Recusandae ullam est, placeat ut atque dolore fugiat laudantium delectus minima iste illo!
-            Dolores quod temporibus nostrum tempore minus, asperiores impedit iure accusantium quae nam provident voluptas earum itaque necessitatibus, natus, a ex sunt cum dicta? Eius ipsam amet similique facilis, alias est.
-            Dolore, eius ipsum ipsa velit autem eum eos, repellat laboriosam dolorem voluptatibus nostrum placeat dicta tenetur quisquam id, ea nam officia esse aperiam aspernatur quam. Recusandae dolorem velit odit aut.
-            Eaque, numquam aperiam. Recusandae accusamus facilis ipsa dolor blanditiis. Dolorem ipsam provident quia eaque perspiciatis consequuntur perferendis iure sequi maiores, tenetur explicabo? Omnis facilis doloribus quis fugit illo consequuntur minus.</p>
-        </section>
-        
     </main>
 
     <footer>
@@ -237,7 +244,7 @@
                 const remEnPixeles = parseFloat(getComputedStyle(document.documentElement).fontSize);
 
                 //  Define cuántos rem extra quieres
-                const extraEnRem = 3.5; // por ejemplo: 3rem
+                const extraEnRem = 7; // por ejemplo: 3rem
                 const extraEnPixeles = remEnPixeles * extraEnRem;
 
                 const alturaTotal = alturaContenido + margenTop + margenBottom + extraEnPixeles;

@@ -6,6 +6,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zain:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-size: 16px;
@@ -15,6 +18,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
+    background: #f7f5f1;
 }
 
 header{
@@ -162,6 +166,22 @@ h1{
     padding: 0 1rem;
 }
 
+.list-group-item{
+    background-color: #f7f5f1;
+    border-color: #0a1128;
+}
+
+.separador-formal {
+    border: none;
+    height: 3px;
+    background-color: #9ea3b0; /* Azul muy oscuro */
+    margin: 3rem 0;
+    border-radius: 2px;
+    opacity: 0.95; /* Un poco más sólida */
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);  */
+}
+
+
 
 footer{
     background-color: #0a1128;
@@ -207,3 +227,8 @@ footer{
 
 }
 
+@media (min-width: 2560px) {
+    main{
+        margin: auto;
+    }
+}

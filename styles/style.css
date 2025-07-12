@@ -120,7 +120,7 @@ main{
     backdrop-filter: blur(5px);
 }
 
-.tarjeta-servicio h6{
+.tarjeta-servicio h6{ 
     font-weight: 700;
     font-size: 0.9rem;
     text-align: center;
@@ -129,6 +129,30 @@ main{
 .tarjeta-servicio p{
     font-size: 0.7rem;
     text-align: justify;
+}
+
+.nuestros-servicios{
+    position: relative;
+    text-decoration: none;
+    color:#0a1128;
+    display: inline-block;
+}
+
+.nuestros-servicios::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #0a1128; /* Azul muy oscuro */
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.nuestros-servicios:hover::after{
+    transform: scaleX(1);
 }
 
 
@@ -148,6 +172,11 @@ h1{
 }
 
 /*------------------------------------------------- Página Líneas ---------------------------------------------------*/
+
+#gas-y-fuego{
+    scroll-margin-top: 10rem;
+}
+
 .servicio{
     width: 100;
     padding: 0;

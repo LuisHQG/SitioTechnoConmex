@@ -182,6 +182,32 @@ h1{
     color: #0a1128;
 }
 
+.tarjeta-info{
+    border:#0a1128 solid 1px;
+}
+
+.tarjeta-info h5{
+   border-color: #0a1128;
+}
+
+.card-header {
+    background-color: #D2D5DA;
+}
+
+.card-footer{
+    background-color: #D2D5DA;
+}
+
+.nosotros{
+    background-color: #f7f5f1;
+    border-radius: 10px;
+    
+}
+
+.footer-nosotros{
+    border-color: #0a1128;
+}
+
 /*------------------------------------------------- Página Líneas ---------------------------------------------------*/
 
 #gas-y-fuego{
@@ -229,6 +255,9 @@ footer{
     background-color: #0a1128;
     margin-top: auto;
     color: #FDFFFF;
+    font-size: 0.6rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .contacto-footer{
@@ -236,9 +265,17 @@ footer{
     padding: 1rem ;
 }
 
+
 .copyright{
-    padding: 1rem;
+    margin: 0;
     width: 100%;
+    background-color: #081c35;
+}
+
+.copyright p{
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
 }
 
 
@@ -284,15 +321,8 @@ footer{
     footer{
         width: 100%;
         display: flex;
-        align-items: flex-end;
-    }
-
-    .copyright{
-        padding: 0 1rem 0 0;
-        text-align: end;
-    }
-
-    
+        align-items: center;
+    }  
 }
 
 @media (min-width: 2560px) {

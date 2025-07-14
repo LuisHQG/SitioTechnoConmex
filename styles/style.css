@@ -6,6 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zain:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap');
 
+
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 8.5rem; /* Ajuste global para scroll automático */
@@ -220,6 +221,17 @@ footer{
     color: #FDFFFF;
 }
 
+.contacto-footer{
+    color: #FDFFFF;
+    padding: 1rem ;
+}
+
+.copyright{
+    padding: 1rem;
+    width: 100%;
+}
+
+
 @media (min-width: 768px) {
 
     html{
@@ -256,6 +268,21 @@ footer{
         font-size: small;
     }
 
+}
+
+@media (min-width: 900px) {
+    footer{
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .copyright{
+        padding: 0 1rem 0 0;
+        text-align: end;
+    }
+
+    
 }
 
 @media (min-width: 2560px) {

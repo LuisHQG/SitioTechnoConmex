@@ -10,6 +10,7 @@
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 8.5rem; /* Ajuste global para scroll automático */
+    overflow-y: scroll
 }
 
 
@@ -49,7 +50,6 @@ main{
     width: 100%;
     background-color: #0a1128;
     padding: 0.5rem 1rem;
-    max-width: 1200px;
     z-index: 1;
     position: fixed;
 }
@@ -126,7 +126,7 @@ main{
 
 .tarjeta-servicio{
     border-radius: 2px;
-    background-color: rgba(158,163,176,0.7);
+    background-color: rgba(120,130,145,0.8);
     color: #0a1128;
     backdrop-filter: blur(5px);
 }
@@ -252,7 +252,7 @@ h1{
 
 
 footer{
-    background-color: #0a1128;
+    background-color: #081c35;
     margin-top: auto;
     color: #FDFFFF;
     font-size: 0.6rem;
@@ -263,13 +263,15 @@ footer{
 .contacto-footer{
     color: #FDFFFF;
     padding: 1rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 
 .copyright{
     margin: 0;
     width: 100%;
-    background-color: #081c35;
+    background-color: #0a1128;
 }
 
 .copyright p{
@@ -313,6 +315,11 @@ footer{
 
     .tarjeta-servicio p{
         font-size: small;
+    }
+
+    .direccion, .telefonos, .email{
+        display: flex;
+        justify-content: center;
     }
 
 }

@@ -249,7 +249,26 @@ h1{
     /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);  */
 }
 
+/* ----------------------------- Contactanos --------------------- */
 
+.contact-info {
+    background-color: white;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.contact-item i {
+    color: #0a1128;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+.map-container {
+    height: 100%;
+    min-height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
 
 footer{
     background-color: #081c35;
@@ -322,6 +341,10 @@ footer{
         justify-content: center;
     }
 
+    .map-container iframe {
+        height: 100%;
+    }
+
 }
 
 @media (min-width: 900px) {
@@ -330,6 +353,11 @@ footer{
         display: flex;
         align-items: center;
     }  
+    
+    .contact-section .row {
+        min-height: 450px;
+        align-items: stretch;
+  }
 }
 
 @media (min-width: 2560px) {

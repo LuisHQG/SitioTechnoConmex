@@ -6,6 +6,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/style.css">
 
@@ -50,14 +54,94 @@
     </header>
 
     <main>
-        <h1>Contacto</h1>
+        <section class="container my-5">
+            <h2 class="text-center mb-4">Contáctanos</h2>
 
+            <div class="row g-4">
+                <!-- Información de contacto -->
+                <div class="col-lg-5">
+                    <div class="contact-info">
+                        <h5 class="mb-4">Información de contacto</h5>
 
-        
+                        <div class="contact-item mb-3 d-flex align-items-start">
+                            <!-- <i class="bi bi-geo-alt-fill"></i> -->
+                             <lord-icon
+                                src="https://cdn.lordicon.com/upjgggre.json"
+                                trigger="in"
+                                delay="500"
+                                state="in-home"
+                                colors="primary:#110a5c"
+                                style="width:80px;height:80px">
+                            </lord-icon>
+                            <div>
+                                <strong>Dirección:</strong><br />
+                                Av. M.A. de Quevedo No. 2214 Col. Puerto México, C.P. 96510 Coatzacoalcos, Ver.
+                            </div>
+                        </div>
+
+                        <div class="contact-item mb-3 d-flex align-items-start">
+                            <!-- <i class="bi bi-telephone-fill"></i> -->
+                             <lord-icon
+                                src="https://cdn.lordicon.com/wtywrnoz.json"
+                                trigger="in"
+                                delay="500"
+                                state="in-phone"
+                                colors="primary:#110a5c"
+                                style="width:60px;height:60px">
+                            </lord-icon>
+                            <div>
+                                <strong>Teléfono:</strong><br />
+                                (921) 21 48605 <br>
+                                (921) 114 7999
+                            </div>
+                        </div>
+
+                        <div class="contact-item mb-3 d-flex align-items-start">
+                            <!-- <i class="bi bi-envelope-fill"></i> -->
+                             <lord-icon
+                                src="https://cdn.lordicon.com/wpsdctqb.json"
+                                trigger="in"
+                                delay="500"
+                                state="in-email"
+                                colors="primary:#110a5c"
+                                style="width:50px;height:50px">
+                            </lord-icon>
+                            <div>
+                                <strong>Correo electrónico:</strong><br />
+                                lhquijanor@technoconmex.com.mx 
+                            </div>
+                        </div>
+
+                        <div class="contact-item d-flex align-items-start">
+                            <!-- <i class="bi bi-person-fill"></i>  -->
+                             <lord-icon
+                                src="https://cdn.lordicon.com/cniwvohj.json"
+                                trigger="in"
+                                delay="500"
+                                state="in-account"
+                                colors="primary:#110a5c"
+                                style="width:50px;height:50px">
+                            </lord-icon>
+                            <div>
+                                <strong>Atención:</strong><br />
+                                Ing. Luis Humberto Quijano Ríos – CEO
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mapa -->
+                <div class="col-lg-7">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3791.359584257634!2d-94.44925822381144!3d18.147341982875325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85e98305ad802f87%3A0x5d160b8bbbcbd76a!2sAv%20Miguel%20A.%20Quevedo%202214%2C%20Puerto%20Mexico%2C%2096510%20Coatzacoalcos%2C%20Ver.!5e0!3m2!1ses-419!2smx!4v1752635562081!5m2!1ses-419!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>  
     </main>
 
     <footer>
-        <div class="contacto-footer container">
+        <!-- <div class="contacto-footer container">
             <h5>Contacto</h5>
             <div class="grid-contacto row">
                 <div class="direccion col-6">
@@ -76,7 +160,7 @@
                     <p>lhquijanor@technoconmex.com.mx </p>
                 </div>
             </div>
-        </div>
+        </div> -->
             
         <div class="copyright">
             <p>Copyright © 2012 Techno Construcciones Mexicanas y Sistemas Convergentes. Derechos Reservados</p>

@@ -256,12 +256,15 @@ h1{
     border-radius: 12px;
     padding: 40px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-size: 0.7rem;
 }
-.contact-item i {
-    color: #0a1128;
-    font-size: 1.5rem;
-    margin-right: 10px;
+.contact-icon {
+    width: 1rem;
+    height: 1rem;
 }
+
+
+
 .map-container {
     height: 100%;
     min-height: 400px;

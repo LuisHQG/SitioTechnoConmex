@@ -94,11 +94,6 @@ main{
   height: 100%;
 }
 
-/*--- Ajuste visual de las imágenes del slider ---*/
-.carousel-item {
-  /* transition: opacity 3s linear; */
-}
-
 .carousel-item img {
   width: 100%;
   height: 100%;
@@ -267,6 +262,10 @@ h1{
     height: 1rem;
 }
 
+.card-nombre{
+    font-size: 0.7rem;
+}
+
 
 
 .map-container {
@@ -325,9 +324,9 @@ footer{
         border-radius: 10px;
     }
 
-    .pagina-principal{
-        /* padding: 5rem 1rem 0rem 1rem; */
-    }
+    /* .pagina-principal{
+        padding: 5rem 1rem 0rem 1rem;
+    } */
 
     .info-section{
         width: 80%;

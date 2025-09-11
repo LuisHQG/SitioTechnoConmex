@@ -226,6 +226,10 @@ h1{
     margin-bottom: 1rem;
 }
 
+.trabajosrealizados{
+    padding-left: 0.6rem;
+}
+
 .experiencia{
     display: flex;
     flex-direction: column;
@@ -247,6 +251,38 @@ h1{
     opacity: 0.95; /* Un poco más sólida */
     /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);  */
 }
+
+/* ----------------------------- Marcas --------------------- */
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.marcas {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marcas:hover .marcas-slide{
+    animation-play-state: paused;
+}
+
+.marcas-slide {
+    display: inline-block;
+    animation: 60s slide infinite linear;
+}
+
+.marcas-slide img {
+    height: 70px;
+    margin: 0 20px;
+}
+
+
 
 /* ----------------------------- Contactanos --------------------- */
 
